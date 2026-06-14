@@ -1,0 +1,195 @@
+.modal-content.glass-modal {
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(250,250,250,0.95));
+  color: #222;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.12);
+  border: none;
+}
+
+.modal-header.bg-gradient {
+  background: linear-gradient(90deg, #2563eb, #0ea5e9);
+  color: #fff;
+  border-bottom: none;
+}
+
+.glass-modal .modal-body {
+  color: #222;
+}
+
+.glass-modal .form-control {
+  background: rgba(255,255,255,0.98);
+  color: #222;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.glass-modal .form-control::placeholder {
+  color: rgba(0,0,0,0.35);
+}
+
+.glass-modal .modal-footer .btn {
+  border-radius: 0.5rem;
+}
+
+.futuristic-input { border-radius: 0.5rem; }
+.futuristic-btn { border-radius: 0.5rem; }
+
+.table-primary th {
+  background: linear-gradient(90deg, rgba(37,99,235,0.06), rgba(14,165,233,0.04));
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  position: relative;
+  overflow: hidden;
+  background: #f8f9fa;
+  min-height: 180px;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+}
+
+.card-img-top img,
+.card-img-top .product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  object-position: center;
+  display: block;
+  background: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog { max-width: 92%; }
+  .card-img-top { height: 140px !important; }
+}
+
+@media (max-width: 576px) {
+  .card-img-top { height: 120px !important; }
+}
+
+/* ----- Styles moved from UsuariosView.vue (scoped) ----- */
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: rgba(26, 31, 46, 0.7);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.glass-modal {
+  /* simplified: light glass appearance to match product modal */
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(250,250,250,0.96));
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  backdrop-filter: blur(6px);
+}
+
+.bg-gradient-header {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);
+  border-bottom: 2px solid rgba(0, 212, 255, 0.2);
+}
+
+.table-row-hover {
+  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.table-row-hover:hover {
+  background: rgba(0, 212, 255, 0.05);
+  transform: scale(1.01);
+}
+
+.badge-cyan {
+  background: rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(0, 212, 255, 0.4);
+}
+
+.futuristic-input {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(0,0,0,0.08);
+  color: #222;
+  padding: 0.5rem 0.75rem;
+  transition: box-shadow 0.18s ease, transform 0.12s ease;
+}
+
+.futuristic-input::placeholder { color: rgba(0,0,0,0.45); }
+
+.futuristic-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 6px 18px rgba(37,99,235,0.06);
+  transform: translateY(-1px);
+}
+
+.login-card-width {
+  width: 100%;
+  max-width: 420px;
+}
+
+.icon-accent {
+  color: #2563eb;
+}
+
+.border-cyan {
+  border-color: rgba(0, 212, 255, 0.3) !important;
+  color: #00d4ff !important;
+}
+
+.futuristic-btn {
+  background: linear-gradient(135deg, #5b8def 0%, #6bb7f0 100%);
+  border: none;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(37,99,235,0.12);
+}
+
+.futuristic-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(37,99,235,0.14);
+}
+
+/* Animations for a simpler, modern feel */
+.modal-content.glass-modal {
+  animation: modalIn 220ms cubic-bezier(.2,.9,.3,1);
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(-8px) scale(0.995); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.card { animation: cardIn 360ms cubic-bezier(.22,.9,.33,1); }
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Make table rows simpler */
+.table-row-hover { transition: background 180ms ease, transform 200ms ease; }
+.table-row-hover:hover { background: rgba(37,99,235,0.03); transform: none; }
+
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 0.875rem;
+  }
+
+  .btn-group-sm > .btn {
+    padding: 0.35rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* ----- End moved styles ----- */
